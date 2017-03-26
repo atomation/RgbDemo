@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+        <import type="net.atomation.rgbdemo.utils.UiUtils" />
+
+        <variable
+            name="viewHolder"
+            type="net.atomation.rgbdemo.activities.adapters.ScanAdapter.ViewHolder"
+            />
+
+        <variable
+            name="device"
+            type="net.atomation.rgbdemo.beans.Device" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:onClick="@{() -> viewHolder.onDeviceSelected()}"
+        style="@style/CardView.Section.Clickable"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_small"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="@{device.name}"
+                style="@style/Text.ListItem"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="@{device.mac}"
+                style="@style/Text.ListItem"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon_small"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/levels_rssi"
+                bind:level='@{UiUtils.getRssiRange(device.rssi)}'
+                tools:ignore="ContentDescription"
+                style="@style/Image"
+                />
+
+            <!-- TODO: maybe add battery icon -->
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</layout>

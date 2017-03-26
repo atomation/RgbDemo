@@ -1,0 +1,38 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="font_tiny">10sp</dimen>
+    <dimen name="font_smaller">15sp</dimen>
+    <dimen name="font_small">20sp</dimen>
+    <dimen name="font_medium">25sp</dimen>
+    <dimen name="font_large">30sp</dimen>
+    <dimen name="font_larger">35sp</dimen>
+    <dimen name="font_huge">40sp</dimen>
+
+    <!-- Icon sizes -->
+    <dimen name="icon_small">25dp</dimen>
+    <dimen name="icon_medium">35dp</dimen>
+    <dimen name="icon_large">80dp</dimen>
+    <dimen name="icon_larger">150dp</dimen>
+
+    <!-- Spacing -->
+    <dimen name="spacing_smaller">5dp</dimen>
+    <dimen name="spacing_small">10dp</dimen>
+    <dimen name="spacing_medium">15dp</dimen>
+    <dimen name="spacing_large">20dp</dimen>
+    <dimen name="spacing_larger">25dp</dimen>
+    <dimen name="spacing_huge">30dp</dimen>
+
+    <!-- radius -->
+    <dimen name="radius_smaller">5dp</dimen>
+    <dimen name="radius_small">10dp</dimen>
+
+    <!-- lines thickness -->
+    <dimen name="line_thickness_small">1dp</dimen>
+    <dimen name="line_thickness_medium">2dp</dimen>
+    <dimen name="line_thickness_large">3dp</dimen>
+
+</resources>

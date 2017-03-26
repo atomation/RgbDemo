@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">RGB Demo</string>
+
+    <!-- Scan Activity -->
+    <string name="scan_title">Available Devices</string>
+    <string name="scan_scanning">scanning…</string>
+
+    <!-- Device Activity -->
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="title_activity_device">LedActivity</string>
+    <string name="led1">Led 1</string>
+    <string name="led2">Led 2</string>
+    <string name="disconnection_msg">Device Disconnected</string>
+    <string name="red">Red</string>
+    <string name="hint_color">0–255</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="set">Set</string>
+
+    <!-- Errors -->
+    <string name="error_reset_password_general">Error: Reset password Failed</string>
+    <string name="error_bluetooth_off">Error: Bluetooth is Off</string>
+    <string name="error_internal_error">Error: Internal error</string>
+    <string name="error_network_unavailable">Error: Network unavailable</string>
+    <string name="error_password_invalid">Error: Invalid password</string>
+    <string name="error_internet">Error: Internet error</string>
+    <string name="error_token_invalid">Error: Invalid Atomation Token</string>
+    <string name="error_connection">Connection Error</string>
+    <string name="error_writing_failed">Error: Write Operation Failed</string>
+    <string name="error_not_in_range">Not in range</string>
+    <string name="error_is_empty">Field is empty</string>
+
+
+</resources>
